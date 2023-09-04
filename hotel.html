@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="picto/favicon-4elements.png" type="image/x-icon">
+    <!-- TITRE -->
+    <title>Atypique Maldives | 4 Éléments</title>
+    <!-- DESCRIPTION -->
+    <meta name="description"
+        content="L'hôtel Eau est au milieu de l'océan Indien. Vous y disposerez de votre plage et de votre bateau. Votre chambre est un caisson immergé à deux mètres sous l'eau.">
+    <!-- LIEN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- POLICES : Alice / Roboto Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <!-- DEBUT DU HEADER -->
+    <header>
+        <!-- BANDEAU JAUNE PROMO -->
+        <div class="bg-yellow text-center little-font">
+            <a href="hotel.html" title="promotion">Commencez l'année du bon pied avec -40% sur l'hôtel Eau !!!</a>
+        </div>
+        <!-- HEADER NAV -->
+        <div class="large-menu flex justify-between text-center align-center">
+            <a href="accueil.html" title="logo 4Eléments">
+                <img src="img/logo-4elements.png" alt="logo 4Elements" title="logo 4Eléments"></a>
+            <nav class="flex align-center small-none">
+                <ul class="flex align-center">
+                    <li><a href="accueil.html" title="Accueil">Accueil</a></li>
+                    <li class="hover-menu"><a href="hotel.html" title="Hotels">Hôtels</a>
+                        <ul class="submenu">
+                            <li><a href="hotel.html" title="Terre">Terre</a></li>
+                            <li><a href="hotel.html" title="Air">Air</a></li>
+                            <li><a href="hotel.html" title="Eau">Eau</a></li>
+                            <li><a href="hotel.html" title="Feu">Feu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accueil.html" title="Concept">Concept</a></li>
+                    <li><a href="accueil.html" title="Architectures">Architectures</a></li>
+                    <li><a href="accueil.html" title="Contact">Contact</a></li>
+                    <li><a href="accueil.html" title="Recherche"><img src="picto/icon-search.png" alt="recherche"
+                                title="recherche"></a></li>
+                </ul>
+            </nav>
+            <div class="flex align-center small-none">
+                <select name="choisir langue" class="langues">
+                    <option value="FR" selected>FR</option>
+                    <option value="EN">EN</option>
+                </select>
+                <a href="accueil.html" title="réserver en ligne" class="small-none btn-border">Réserver</a>
+            </div>
+            <!-- SMALL BURGER -->
+            <div class="large-none small-block" onclick="toggleMenu()">
+                <img src="picto/icon-menu.png" alt="picto menu burger" title="menu burger"
+                    class="icon-burg large-none small-block">
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU SMALL LATERAL -->
+    <div class="large-none small-block slideburger menu-cache">
+        <nav>
+            <ul>
+                <li><a href="hotel.html" title="Hôtels">Hôtels</a></li>
+                <li><a href="accueil.html" title="Concept">Concept</a></li>
+                <li><a href="accueil.html" title="Architectures">Architectures</a></li>
+                <li><a href="accueil.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider small-none" id="slider">
+        <img src="img/slider2.png" alt="photo d'Atypique Maldives" title="photo d'Atypique Maldives" class="large-100">
+        <div class="slogan">
+            <h1>Atypique Maldives</h1>
+        </div>
+    </div>
+    <!-- BOUTON APPEL ET MESSAGE -->
+    <a href="tel:+33652187601" title="téléphone" class="phone"><img src="picto/icon-phone.png"
+            alt="Contactez nous par téléphone" title="Contactez nous par téléphone">
+    </a>
+    <a href="mailto:4elements@gmail.com" title="mail" class="mail"><img src="picto/icon-mail.png"
+            alt="Contactez nous par mail" title="Contactez nous par mail">
+    </a>
+
+    <!-- BACK TO TOP -->
+    <a href="#" title="retour en haut" class="back-to-top"><img src="picto/back-to-top.png" alt="retour en haut"
+            title="retour en haut"></a>
+
+    <!-- MAIN -->
+    <main>
+        <nav class="fil-ariane">
+            <ul>
+                <li>
+                    <a href="accueil.html" title="Accueil">Accueil > </a>
+                </li>
+                <li>
+                    <a href="hotel.html" title="Atypique Maldives"><span class="underline">Atypique Maldives</span></a>
+                </li>
+            </ul>
+        </nav>
+        <!-- BLOC 1 - PRESENTATION HOTEL -->
+        <div class="presenta-hotel flex justify-between align-center small-block">
+            <img src="img/img1-hotel.png" alt="image hotel sous l'eau" title="image hotel sous l'eau"
+                class="large-50 small-100">
+            <article class="large-50 small-100">
+                <div class="flex large-100 justify-between">
+                    <h2>Hôtel de luxe sous-marin<br> all-inclusive</h2>
+                    <p class="prix">1200€ /nuit</p>
+                </div>
+                <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps"
+                    class="deco-gps">
+                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamcolaboris sunt in culpa qui officia deserunt mollit anim id est laborum. Quis nostrud
+                    exercitation
+                    ullamcolaboris sunt in culpa qui officia deserunt.</p>
+                <div class="flex justify-between align-center">
+                    <div>
+                        <img src="picto/picto-all-inclusive.png" alt="picto fourchette" title="picto fourchette"
+                            class="picto">
+                        <img src="picto/picto-clim.png" alt="picto clim" title="picto clim" class="picto">
+                    </div>
+                    <div class="large-20 options">
+                        <p>All-inclusive</p>
+                        <p>Climatisation</p>
+                    </div>
+                    <div>
+                        <img src="picto/picto-wifi.png" alt="picto wifi" title="picto wifi" class="picto">
+                        <img src="picto/picto-secure.png" alt="picto securité" title="picto securité" class="picto">
+                    </div>
+                    <div class="large-20 options">
+                        <p>Internet wifi</p>
+                        <p>Coffre-fort</p>
+                    </div>
+                    <div>
+                        <img src="picto/picto-spa.png" alt="picto spa" title="picto spa" class="picto">
+                        <img src="picto/picto-tv.png" alt="picto tv" title="picto tv" class="picto">
+                    </div>
+                    <div class="large-20 options">
+                        <p>Spa privatif</p>
+                        <p>TV</p>
+                    </div>
+                </div>
+                <a href="reservation.html" title="reservation" class="btn-border">Réserver</a>
+            </article>
+        </div>
+
+        <!-- BLOC 2 - BON A SAVOIR -->
+        <div class="conseil flex justify-between text-justify align-center small-block">
+            <div class="bloc-bleu large-33 small-100 shadow">
+                <article>
+                    <h3>Bon à savoir</h3>
+                    <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps"
+                        class="deco-gps">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit. Laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </article>
+            </div>
+            <img src="img/img2-salon-hotel.png" alt="image salon hotel" title="image salon hotel"
+                class="large-50 small-100">
+        </div>
+
+        <!-- BLOC 3 - PERIODE MALDIVES -->
+        <div class="argument bloc-bleu">
+            <div class="flex justify-between align-center small-block">
+                <img src="img/img4-piscine.png" alt="image resto sous l'eau" title="image resto sous l'eau"
+                    class="large-33 small-none">
+                <article class="large-33 small-100">
+                    <h4>Quel est la meilleure période pour visiter les Maldives ?</h4>
+                    <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps"
+                        class="deco-gps">
+                    <p class="text-justify">The Maldives has a hot, tropical climate with sunshine all year round. The
+                        most popular months to
+                        visit are between November and April during the north-east monsoon when it is dry with very
+                        little wind. Whilst there may be rain during some of the summer months.
+                    </p>
+                    <p class="little-title">Haute saison</p>
+                    <table>
+                        <tr>
+                            <td>Jan</td>
+                            <td>Fév</td>
+                            <td>Mar</td>
+                            <td>Avr</td>
+                            <td class="high-season">Mai</td>
+                            <td class="high-season">Jui</td>
+                        </tr>
+                        <tr>
+                            <td class="high-season">Jul</td>
+                            <td class="high-season">Aou</td>
+                            <td class="high-season">Sep</td>
+                            <td>Oct</td>
+                            <td>Nov</td>
+                            <td>Déc</td>
+                        </tr>
+                    </table>
+                </article>
+                <img src="img/img5-house.png" alt="image ile maldives" title="image ile maldives"
+                    class="large-33 small-100">
+            </div>
+        </div>
+
+        <!-- BLOC 4 - AUTRES HOTELS -->
+        <div class="concept container">
+            <h5>Vous pourriez aussi aimer...</h5>
+            <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps" class="deco-gps">
+            <div class="flex justify-between text-center align-center small-block">
+                <div class="large-25 small-100 text-center bloc-blanc shadow">
+                    <img src="img/img-atypique-thailande.png" alt="image atypique thailande"
+                        title="image atypique thailande" class="large-100">
+                    <p class="little-title">
+                        Atypique <span class="brown-text">Thaïlande</span>
+                    </p>
+                    <p>
+                        L'hôtel <span class="brown-text">Terre</span> est aménagé avec
+                        beaucoup de soin, les chambres de l'hôtel vous offriront la
+                        fraîcheur et l'apaisement ouvrant sur un paysage époustouflant !
+                    </p>
+                    <a href="hotel.html" title="découvrir" class="btn-black">Découvir</a>
+                </div>
+                <div class="large-25 small-100 text-center bloc-blanc shadow">
+                    <img src="img/img-atypique-bresil.png" alt="image atypique bresil" title="image atypique bresil"
+                        class="large-100">
+                    <p class="little-title">
+                        Atypique <span class="green-text">Brésil</span>
+                    </p>
+                    <p>
+                        L'hôtel <span class="green-text">Air</span> est un concept
+                        architectural innovant qui a permis une implantation à la cime de
+                        la forêt pour offrir un panorama vertigineux à votre réveil.
+                    </p>
+                    <a href="hotel.html" title="découvrir" class="btn-black">Découvir</a>
+                </div>
+                <div class="large-25 small-100 text-center bloc-blanc shadow">
+                    <img src="img/img-atypique-finlande.png" alt="image atypique finlande"
+                        title="image atypique finlande" class="large-100">
+                    <p class="little-title">
+                        Atypique <span class="burgundy-text">Finlande</span>
+                    </p>
+                    <p>
+                        L'hôtel <span class="burgundy-text">Feu</span> ne se situe bien
+                        sûr pas sur un volcan, mais en Finlande. Feu des aurores boréales
+                        que vous pourrez admirer tous les soirs par le toit vitré de votre
+                        chambre.
+                    </p>
+                    <a href="hotel.html" title="découvrir" class="btn-black">Découvir</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- DEBUT DU FOOTER -->
+    <footer>
+        <div class="info flex justify-around align-center small-block">
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="brown-text"> Thaïlande</span>
+                </p>
+                <address>62,Veediyabandara Mw, Ethulkotte</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="blue-text"> Maldives</span>
+                </p>
+                <address>98 To Ngoc Van, Tay Ho, Hanoi</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">Suivez nous</p>
+                <a href="accueil.html" title="icon instagram">
+                    <img src="picto/Icon-instagram.png" alt="icon instagram" title="icon instagram">
+                </a>
+                <a href="accueil.html" title="icon twitter">
+                    <img src="picto/Icon-twitter.png" alt="icon twitter" title="icon twitter">
+                </a>
+                <a href="accueil.html" title="icon facebook">
+                    <img src="picto/Icon-facebook.png" alt="icon facebook" title="icon facebook">
+                </a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="green-text"> Brésil</span>
+                </p>
+                <address>62,Veediyabandara Mw, Ethulkotte</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="burgundy-text"> Finlande</span>
+                </p>
+                <address>98 To Ngoc Van, Tay Ho, Hanoi</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+        </div>
+        <a href="accueil.html" title="mentions légales" class="text-center large-100">Mentions légales | Crédits | Site
+            réalisé par Sirinne</a>
+    </footer>
+
+    <!-- LIENS JAVASCRIPT -->
+    <script src="js/header.js"></script>
+    <script src="js/menuburger.js"></script>
+
+</body>
+
+</html>

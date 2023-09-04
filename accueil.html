@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="picto/favicon-4elements.png" type="image/x-icon" />
+    <!-- TITRE -->
+    <title>4 Éléments | Hôtels inouïs partout dans le monde</title>
+    <!-- DESCRIPTION -->
+    <meta name="description" content="4 Eléments, c'est 4 hôtels pour 4 éléments : terre, eau, air feu. 4 hôtels
+        insolites bâtis sur des lieux inattendus de la planète !" />
+    <!-- LIEN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- POLICES : Alice / Roboto Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- DEBUT DU HEADER -->
+    <header>
+        <!-- BANDEAU JAUNE PROMO -->
+        <div class="bg-yellow text-center little-font">
+            <a href="hotel.html" title="promotion">Commencez l'année du bon pied avec -40% sur l'hôtel Eau !!!</a>
+        </div>
+        <!-- HEADER NAV -->
+        <div class="large-menu flex justify-between text-center align-center">
+            <a href="accueil.html" title="logo 4Eléments">
+                <img src="img/logo-4elements.png" alt="logo 4Elements" title="logo 4Eléments"></a>
+            <nav class="flex align-center small-none">
+                <ul class="flex align-center">
+                    <li><a href="accueil.html" title="Accueil">Accueil</a></li>
+                    <li class="hover-menu"><a href="hotel.html" title="Hotels">Hôtels</a>
+                        <ul class="submenu">
+                            <li><a href="hotel.html" title="Terre">Terre</a></li>
+                            <li><a href="hotel.html" title="Air">Air</a></li>
+                            <li><a href="hotel.html" title="Eau">Eau</a></li>
+                            <li><a href="hotel.html" title="Feu">Feu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accueil.html" title="Concept">Concept</a></li>
+                    <li><a href="accueil.html" title="Architectures">Architectures</a></li>
+                    <li><a href="accueil.html" title="Contact">Contact</a></li>
+                    <li><a href="accueil.html" title="Recherche"><img src="picto/icon-search.png" alt="recherche"
+                                title="recherche"></a></li>
+                </ul>
+            </nav>
+            <div class="flex align-center small-none">
+                <select name="choisir langue" class="langues">
+                    <option value="FR" selected>FR</option>
+                    <option value="EN">EN</option>
+                </select>
+                <a href="accueil.html" title="réserver en ligne" class="small-none btn-border">Réserver</a>
+            </div>
+            <!-- SMALL BURGER -->
+            <div class="large-none small-block" onclick="toggleMenu()">
+                <img src="picto/icon-menu.png" alt="picto menu burger" title="menu burger"
+                    class="icon-burg large-none small-block">
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU SMALL LATERAL -->
+    <div class="large-none small-block slideburger menu-cache">
+        <nav>
+            <ul>
+                <li><a href="hotel.html" title="Hôtels">Hôtels</a></li>
+                <li><a href="accueil.html" title="Concept">Concept</a></li>
+                <li><a href="accueil.html" title="Architectures">Architectures</a></li>
+                <li><a href="accueil.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- SLIDER -->
+    <div class="slider small-none" id="slider">
+        <img src="img/img-slider.png" alt="photo de l'hôtel Thaïlande vue sur un paysage paradisiaque"
+            title="photo de l'hôtel Thaïlande vue sur un paysage paradisiaque" class="large-100">
+        <div class="slogan">
+            <h1 class="text-center">Vous êtes unique, votre hôtel aussi !</h1>
+        </div>
+    </div>
+
+    <!-- BOUTON APPEL ET MESSAGE -->
+    <a href="tel:+33652187601" title="téléphone" class="phone"><img src="picto/icon-phone.png"
+            alt="Contactez nous par téléphone" title="Contactez nous par téléphone">
+    </a>
+    <a href="mailto:4elements@gmail.com" title="mail" class="mail"><img src="picto/icon-mail.png"
+            alt="Contactez nous par mail" title="Contactez nous par mail">
+    </a>
+
+    <!-- BACK TO TOP -->
+    <a href="#" title="retour en haut" class="back-to-top"><img src="picto/back-to-top.png" alt="retour en haut"
+            title="retour en haut"></a>
+
+    <!-- MAIN -->
+    <main>
+        <!-- BLOC 1 - RECHERCHER UN HOTEL -->
+        <div class="bg-black container shadow">
+            <form action="traitement.php" method="post" class="flex justify-center align-center small-block">
+                <label class="flex align-center">
+                    <img src="picto/picto-depart.png" alt="picto départ" title="départ">
+                    <input type="date" name="départ" class="depart"></label>
+                <label class="flex align-center"><img src="picto/picto-retour.png" alt="picto retour" title="retour">
+                    <input type="date" name="retour" class="retour"></label>
+                <div class="flex align-center">
+                    <img src="picto/picto-nb.png" alt="picto nombre" title="nombre">
+                    <select name="nombre" class="nombre">
+                        <option value="Nombre de voyageurs" selected>
+                            Nombre de voyageurs
+                        </option>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                        <option value="1">7</option>
+                        <option value="1">8</option>
+                        <option value="1">9</option>
+                        <option value="1">10</option>
+                    </select>
+                </div>
+                <div class="flex align-center">
+                    <img src="picto/picto-chambre.png" alt="picto chambre" title="chambre">
+                    <select name="chambre" class="chambre">
+                        <option value="Nombre de chambre" selected>Chambre(s)</option>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                    </select>
+                </div>
+                <input type="button" value="Rechercher" class="btn-border small-100">
+            </form>
+        </div>
+
+        <!-- BLOC 2 - PRESENTATION 4ELEMENTS -->
+        <div class="presentation flex justify-between align-center small-block">
+            <article class="large-50 small-100">
+                <h2>Votre voyage commence ici</h2>
+                <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps"
+                    class="deco-gps">
+                <p class="text-justify">
+                    4 Eléments, c'est 4 hôtels pour 4 éléments : terre, eau, air feu. 4
+                    hôtels insolites bâtis sur des lieux inattendus de la planète pour
+                    la construction desquels nous avons du prouver que nous étions les
+                    meilleurs, les plus inventifs et, en même temps, les plus à l'écoute
+                    de l'identité du site choisi. Que nous voulions révolutionner le
+                    tourisme : le luxe, l'aventure et la vision à long terme dans un
+                    même projet.
+                </p>
+                <a href="hotel.html" title="en savoir +" class="btn-border">En savoir +</a>
+            </article>
+            <img src="img/img1-water-house.png" alt="image vue de l'hôtel Brésil" title="image vue de l'hôtel Brésil"
+                class="large-50 small-100">
+        </div>
+
+        <!-- BLOC 3 - CONCEPT 4 HOTELS -->
+        <div class="concept container">
+            <h3>En route vers nos hôtels atypiques</h3>
+            <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps" class="deco-gps">
+            <div class="flex justify-center text-center align-center small-block">
+                <div class="large-25 small-100 text-center bloc-blanc shadow">
+                    <img src="img/img-atypique-thailande.png" alt="image atypique thailande"
+                        title="image atypique thailande" class="large-100">
+                    <p class="little-title">
+                        Atypique <span class="brown-text">Thaïlande</span>
+                    </p>
+                    <p>
+                        L'hôtel <span class="brown-text">Terre</span> est aménagé avec
+                        beaucoup de soin, les chambres de l'hôtel vous offriront la
+                        fraîcheur et l'apaisement ouvrant sur un paysage époustouflant !
+                    </p>
+                    <a href="hotel.html" title="découvrir" class="btn-black">Découvir</a>
+                </div>
+                <div class="large-25 small-100 text-center bloc-blanc shadow">
+                    <img src="img/img-atypique-maldives.png" alt="image atypique maldives"
+                        title="image atypique maldives" class="large-100">
+                    <p class="little-title">
+                        Atypique <span class="blue-text">Maldives</span>
+                    </p>
+                    <p>
+                        L'hôtel <span class="blue-text">Eau</span> est au milieu de
+                        l'océan Indien. Vous y disposerez de votre plage et de votre
+                        bateau. Votre chambre est un caisson immergé à deux mètres sous
+                        l'eau.
+                    </p>
+                    <a href="hotel.html" title="découvrir" class="btn-black">Découvir</a>
+                </div>
+                <div class="large-25 small-100 text-center bloc-blanc shadow">
+                    <img src="img/img-atypique-bresil.png" alt="image atypique bresil" title="image atypique bresil"
+                        class="large-100">
+                    <p class="little-title">
+                        Atypique <span class="green-text">Brésil</span>
+                    </p>
+                    <p>
+                        L'hôtel <span class="green-text">Air</span> est un concept
+                        architectural innovant qui a permis une implantation à la cime de
+                        la forêt pour offrir un panorama vertigineux à votre réveil.
+                    </p>
+                    <a href="hotel.html" title="découvrir" class="btn-black">Découvir</a>
+                </div>
+                <div class="large-25 small-100 text-center bloc-blanc shadow">
+                    <img src="img/img-atypique-finlande.png" alt="image atypique finlande"
+                        title="image atypique finlande" class="large-100">
+                    <p class="little-title">
+                        Atypique <span class="burgundy-text">Finlande</span>
+                    </p>
+                    <p>
+                        L'hôtel <span class="burgundy-text">Feu</span> ne se situe bien
+                        sûr pas sur un volcan, mais en Finlande. Feu des aurores boréales
+                        que vous pourrez admirer tous les soirs par le toit vitré de votre
+                        chambre.
+                    </p>
+                    <a href="hotel.html" title="découvrir" class="btn-black">Découvir</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- BLOC 4 - ARCHITECTURES -->
+        <div class="architect bloc-orange small-none">
+            <div class="flex justify-between align-center">
+                <img src="img/img6-architectures.png" alt="image architecture hotel" title="image architecture hotel"
+                    class="large-50 small-100">
+                <article class="large-50 small-100">
+                    <h4>Au service des plus grands architectes</h4>
+                    <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps"
+                        class="deco-gps">
+                    <p class="text-justify">
+                        4 Eléments se met au service des plus grands noms de
+                        l'architecture mondiale et non le contraire. En effet, nous
+                        souhaitons que les artistes c'est-à-dire aussi bien les
+                        architectes d'intérieur qui travaillent à nos côtés se sentent le
+                        plus libres d'innover pour un monde plus cohérent et plus
+                        aventureux. Les hôtels 4 Eléments sont donc leur terrain de jeu.
+                    </p>
+                    <a href="hotel.html" title="en savoir +" class="btn-border">En savoir +</a>
+                </article>
+            </div>
+        </div>
+
+        <!-- BLOC 4 - AVIS -->
+        <div class="avis container small-none">
+            <h5>Parole à nos voyageurs</h5>
+            <img src="picto/line-tracker.png" alt="décoration ligne gps" title="décoration ligne gps" class="deco-gps">
+            <div class="flex justify-center text-center small-100 small-none">
+                <div class="large-33 text-center bloc-avis shadow">
+                    <img src="picto/picto-stars.png" alt="picto étoiles" title="étoiles avis">
+                    <p class="little-title">
+                        Atypique <span class="blue-text">Maldives</span>
+                    </p>
+                    <q>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        aut fugit, sed quia consequuntur magni dolores eos qui.</q>
+                    <p>Trinh Xuan Thuan</p>
+                </div>
+                <div class="large-33 text-center bloc-avis-border shadow">
+                    <img src="picto/picto-stars.png" alt="picto avis" title="étoiles avis">
+                    <p class="little-title">
+                        Atypique <span class="green-text">Brésil</span>
+                    </p>
+                    <q>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        aut fugit, sed quia consequuntur magni dolores eos qui.</q>
+                    <p>Trinh Xuan Thuan</p>
+                </div>
+                <div class="large-33 text-center bloc-avis shadow">
+                    <img src="picto/picto-stars.png" alt="picto avis" title="étoiles avis">
+                    <p class="little-title">
+                        Atypique <span class="burgundy-text">Finlande</span>
+                    </p>
+                    <q>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                        aut fugit, sed quia consequuntur magni dolores eos qui.</q>
+                    <p>Trinh Xuan Thuan</p>
+                </div>
+            </div>
+            <a href="accueil.html" title="button slide" class="slide">
+                <img src="picto/picto-btn-slide.png" alt="boutons slide" title="boutons slide"></a>
+        </div>
+    </main>
+
+    <!-- DEBUT DU FOOTER -->
+    <footer>
+        <div class="info flex justify-around align-center small-block">
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="brown-text"> Thaïlande</span>
+                </p>
+                <address>62,Veediyabandara Mw, Ethulkotte</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="blue-text"> Maldives</span>
+                </p>
+                <address>98 To Ngoc Van, Tay Ho, Hanoi</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">Suivez nous</p>
+                <a href="accueil.html" title="icon instagram">
+                    <img src="picto/Icon-instagram.png" alt="icon instagram" title="icon instagram">
+                </a>
+                <a href="accueil.html" title="icon twitter">
+                    <img src="picto/Icon-twitter.png" alt="icon twitter" title="icon twitter">
+                </a>
+                <a href="accueil.html" title="icon facebook">
+                    <img src="picto/Icon-facebook.png" alt="icon facebook" title="icon facebook">
+                </a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="green-text"> Brésil</span>
+                </p>
+                <address>62,Veediyabandara Mw, Ethulkotte</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="burgundy-text"> Finlande</span>
+                </p>
+                <address>98 To Ngoc Van, Tay Ho, Hanoi</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+        </div>
+        <a href="accueil.html" title="mentions légales" class="text-center large-100">Mentions légales | Crédits | Site
+            réalisé par Sirinne</a>
+    </footer>
+
+    <!-- LIENS JAVASCRIPT -->
+    <script src="js/header.js"></script>
+    <script src="js/menuburger.js"></script>
+</body>
+
+</html>

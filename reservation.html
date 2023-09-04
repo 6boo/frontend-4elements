@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="picto/favicon-4elements.png" type="image/x-icon" />
+    <!-- TITRE -->
+    <title>Le détail de votre réservation | 4 Éléments</title>
+    <!-- DESCRIPTION -->
+    <meta name="description" content="4 Eléments, c'est 4 hôtels pour 4 éléments : terre, eau, air feu. 4 hôtels
+        insolites bâtis sur des lieux inattendus de la planète !" />
+    <!-- LIEN CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- POLICES : Alice / Roboto Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- DEBUT DU HEADER -->
+    <header>
+        <!-- BANDEAU JAUNE PROMO -->
+        <div class="bg-yellow text-center little-font">
+            <a href="hotel.html" title="promotion">Commencez l'année du bon pied avec -40% sur l'hôtel Eau !!!</a>
+        </div>
+        <!-- HEADER NAV -->
+        <div class="large-menu flex justify-between text-center align-center">
+            <a href="accueil.html" title="logo 4Eléments">
+                <img src="img/logo-4elements.png" alt="logo 4Elements" title="logo 4Eléments"></a>
+            <nav class="flex align-center small-none">
+                <ul class="flex align-center">
+                    <li><a href="accueil.html" title="Accueil">Accueil</a></li>
+                    <li class="hover-menu">
+                        <a href="hotel.html" title="Hotels">Hôtels</a>
+                        <ul class="submenu">
+                            <li><a href="hotel.html" title="Terre">Terre</a></li>
+                            <li><a href="hotel.html" title="Air">Air</a></li>
+                            <li><a href="hotel.html" title="Eau">Eau</a></li>
+                            <li><a href="hotel.html" title="Feu">Feu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="accueil.html" title="Concept">Concept</a></li>
+                    <li>
+                        <a href="accueil.html" title="Architectures">Architectures</a>
+                    </li>
+                    <li><a href="accueil.html" title="Contact">Contact</a></li>
+                    <li>
+                        <a href="accueil.html" title="Recherche"><img src="picto/icon-search.png" alt="recherche"
+                                title="recherche"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex align-center small-none">
+                <select name="choisir langue" class="langues">
+                    <option value="FR" selected>FR</option>
+                    <option value="EN">EN</option>
+                </select>
+                <a href="accueil.html" title="réserver en ligne" class="small-none btn-border">Réserver</a>
+            </div>
+            <!-- SMALL BURGER -->
+            <div class="large-none small-block" onclick="toggleMenu()">
+                <img src="picto/icon-menu.png" alt="picto menu burger" title="menu burger"
+                    class="icon-burg large-none small-block">
+            </div>
+        </div>
+    </header>
+
+    <!-- MENU SMALL LATERAL -->
+    <div class="large-none small-block slideburger menu-cache">
+        <nav>
+            <ul>
+                <li><a href="hotel.html" title="Hôtels">Hôtels</a></li>
+                <li><a href="accueil.html" title="Concept">Concept</a></li>
+                <li>
+                    <a href="accueil.html" title="Architectures">Architectures</a>
+                </li>
+                <li><a href="accueil.html" title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- BOUTON APPEL ET MESSAGE -->
+    <a href="tel:+33652187601" title="téléphone" class="phone"><img src="picto/icon-phone.png"
+            alt="Contactez nous par téléphone" title="Contactez nous par téléphone">
+    </a>
+    <a href="mailto:4elements@gmail.com" title="mail" class="mail"><img src="picto/icon-mail.png"
+            alt="Contactez nous par mail" title="Contactez nous par mail">
+    </a>
+
+    <!-- BACK TO TOP -->
+    <a href="#" title="retour en haut" class="back-to-top"><img src="picto/back-to-top.png" alt="retour en haut"
+            title="retour en haut"></a>
+
+    <!-- MAIN -->
+    <main class="bg-img">
+        <nav class="fil-ariane">
+            <ul>
+                <li>
+                    <a href="accueil.html">Accueil > </a>
+                </li>
+                <li>
+                    <a href="hotel.html">Atypique Maldives > </a>
+                </li>
+                <li>
+                    <a href="reservation.html"><span class="underline">Réservation</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- BLOC 1 - FORMULAIRE DE RESERVATION -->
+        <div class="formulaire container flex justify-center align-center small-block">
+            <div class="large-50 small-100">
+                <div class="bg-black shadow">
+                    <form action="traitement.php" method="post" onsubmit="return verification()">
+                        <fieldset>
+                            <legend>Vos coordonnées</legend>
+                            <select name="genre">
+                                <option value="genre" selected>Genre</option>
+                                <option value="madame">Madame</option>
+                                <option value="monsieur">Monsieur</option>
+                                <option value="mademoiselle">Mademoiselle</option>
+                            </select>
+                            <input type="text" name="nom" id="nom" placeholder="Nom" required onchange="verifNom()">
+                            <p class="error" id="error-nom"></p>
+                            <input type="text" name="prenom" id="prenom" placeholder="Prénom" required
+                                onchange="verifPrenom()">
+                            <input type="text" name="adresse" id="adresse" placeholder="Adresse" required
+                                onchange="verifAdresse()">
+                            <p class="error" id="error-prenom"></p>
+                            <p class="error" id="error-adresse"></p>
+                            <input type="text" name="ville" id="ville" placeholder="Ville" required
+                                onchange="verifVille()">
+                            <input type="number" name="cpostal" id="cpostal" placeholder="Code postal" required
+                                onchange="verifCPostal()">
+                            <p class="error" id="error-ville"></p>
+                            <p class="error" id="error-cpostal"></p>
+                            <input type="email" name="mail" id="mail" placeholder="E-mail" required
+                                onchange="verifMail()">
+                            <input type="number" name="tel" id="tel" placeholder="Téléphone" required
+                                onchange="verifTel()">
+                            <p class="error" id="error-mail"></p>
+                            <p class="error" id="error-tel"></p>
+                            <input type="submit" id="envoyer" value="Finaliser" class="btn-border">
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <!-- BLOC 2 - RESUME RESERVATION -->
+            <div class="large-50 small-100 reservation">
+                <div class="bg-black shadow">
+                    <h1>Résumé de la réservation</h1>
+                    <ul>
+                        <li>Hôtel de luxe sous-marin aux Maldives</li>
+                        <li>sam 14 janvier - sam 21 janvier</li>
+                        <li>2 adultes, 1 chambre, 7 nuits</li>
+                    </ul>
+                    <div class="flex large-100 justify-between">
+                        <p class="prix">Total :</p>
+                        <p class="prix">8400€</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- DEBUT DU FOOTER -->
+    <footer>
+        <div class="info flex justify-around align-center small-block">
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="brown-text"> Thaïlande</span>
+                </p>
+                <address>62,Veediyabandara Mw, Ethulkotte</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="blue-text"> Maldives</span>
+                </p>
+                <address>98 To Ngoc Van, Tay Ho, Hanoi</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">Suivez nous</p>
+                <a href="accueil.html" title="icon instagram">
+                    <img src="picto/Icon-instagram.png" alt="icon instagram" title="icon instagram">
+                </a>
+                <a href="accueil.html" title="icon twitter">
+                    <img src="picto/Icon-twitter.png" alt="icon twitter" title="icon twitter">
+                </a>
+                <a href="accueil.html" title="icon facebook">
+                    <img src="picto/Icon-facebook.png" alt="icon facebook" title="icon facebook">
+                </a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="green-text"> Brésil</span>
+                </p>
+                <address>62,Veediyabandara Mw, Ethulkotte</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+            <div class="large-15 small-100 text-center">
+                <p class="footer-title">
+                    Atypique<span class="burgundy-text"> Finlande</span>
+                </p>
+                <address>98 To Ngoc Van, Tay Ho, Hanoi</address>
+                <a href="tel:+84365982160" title="téléphone">Tel : +84365982160</a>
+            </div>
+        </div>
+        <a href="accueil.html" title="mentions légales" class="text-center large-100">Mentions légales | Crédits | Site
+            réalisé par Sirinne</a>
+    </footer>
+    <!-- LIENS JAVASCRIPT -->
+    <script src="js/form.js"></script>
+    <script src="js/menuburger.js"></script>
+</body>
+
+</html>

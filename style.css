@@ -1,0 +1,651 @@
+/* ELEMENTS DE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+body,
+.langues,
+.retour,
+.depart,
+.nombre,
+.chambre {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.little-title,
+legend {
+  font-family: "Alice", serif;
+  font-weight: normal;
+}
+
+/* MISE EN PAGE */
+.flex {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center,
+.btn-black,
+.btn-border,
+.slide {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* TAILLES */
+.large-100 {
+  width: 100%;
+}
+
+.large-50 {
+  width: 50%;
+}
+
+.large-33 {
+  width: 33%;
+}
+
+.large-25 {
+  width: 25%;
+}
+
+.large-20 {
+  width: 20%;
+}
+
+.large-15 {
+  width: 15%;
+}
+
+.formulaire input,
+.formulaire select {
+  width: 40%;
+}
+
+.slide,
+li:hover .submenu,
+.submenu a,
+.picto {
+  display: block;
+}
+
+.fil-ariane ul li {
+  display: inline-block;
+}
+
+.error,
+li .submenu {
+  display: none;
+}
+
+/* COULEURS ET BACKGROUND COLOR */
+.bg-yellow {
+  background-color: #ddcf14;
+}
+
+.large-menu {
+  background-color: #2a272794;
+  /*header transparence*/
+  padding: 0.5rem 1rem;
+}
+
+a,
+body,
+option,
+.slideburger,
+.langues,
+input.btn-border,
+.slideburger nav a {
+  color: #fff;
+}
+
+.bg-black {
+  background-color: #202022c2;
+}
+
+body,
+option,
+.slideburger {
+  background-color: #2a2727;
+}
+
+.bloc-avis-border {
+  border: 1px solid #fff;
+}
+
+.bloc-blanc,
+.bloc-avis {
+  background-color: #fff;
+}
+
+.bg-yellow a,
+.bloc-blanc p,
+.bloc-avis,
+.btn-black {
+  color: #2a2727;
+}
+
+.bloc-bleu {
+  background-color: #3598d4;
+}
+
+.bloc-orange, .high-season {
+  background-color: #d55815;
+}
+
+.brown-text,
+.error {
+  color: #b97d15;
+}
+
+.blue-text {
+  color: #3598d4;
+}
+
+.green-text {
+  color: #20a71b;
+}
+
+.burgundy-text {
+  color: #be1e2f;
+}
+
+td {
+  border: 2px solid #d55815;
+  padding: 0rem 0.5rem;
+}
+
+/* HOVER */
+
+.btn-border:hover {
+  border: 1px solid #fff;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 10px;
+}
+
+.btn-black:hover {
+  border: 1px solid #2a2727;
+  background-color: #2a2727;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+
+header nav a:hover {
+  color: #d55815;
+}
+
+.bg-yellow:hover {
+  background-color: #c9bd21;
+}
+
+/* CHANGER BACKGROUND COLOR HEADER AVEC JS */
+.bg-change {
+  background-color: #2a2727;
+}
+
+/* OMBRAGE */
+header {
+  box-shadow: #202022 0px 5px 20px;
+}
+
+.shadow {
+  box-shadow: 0px 0px 30px 10px #020202;
+}
+
+/* FORMULAIRE VERIFICATION JS*/
+
+.error {
+  font-weight: 600;
+  padding: 0rem 1rem;
+}
+
+/* BOUTONS */
+.btn-border {
+  outline: 1px solid #fff;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-black {
+  border: 1px solid #2a2727;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* MISE EN FORME DES TEXTES */
+.underline {
+  text-decoration: underline;
+}
+
+ul li,
+.hover-menu,
+.slideburger ul li {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+.langues,
+fieldset,
+.retour,
+.depart,
+.nombre,
+.chambre,
+.formulaire input,
+.formulaire select {
+  border: none;
+}
+
+input.btn-border,
+.langues {
+  background: none;
+}
+
+header a,
+h1,
+h2,
+h3,
+h4,
+h5,
+.btn-black,
+.btn-border,
+.little-title,
+.footer-title,
+legend,
+.slideburger nav a,
+.underline {
+  text-transform: uppercase;
+}
+
+header a,
+.btn-black,
+.btn-border,
+.footer-title,
+.langues,
+.green-text,
+.brown-text,
+.blue-text,
+.burgundy-text,
+.slideburger nav a {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: 2px 4px 4px black;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.prix,
+legend {
+  font-size: 1.5rem;
+}
+
+.little-title {
+  font-size: 1.2rem;
+}
+
+.little-font,
+.error,
+.fil-ariane {
+  font-size: 0.8rem;
+}
+
+p,
+.btn-black,
+.btn-border,
+footer,
+header nav a,
+.langues,
+.retour,
+.depart,
+.nombre,
+.chambre,
+footer a{
+  font-size: 1rem;
+}
+
+/* POSITIONS */
+header,
+.back-to-top,
+.phone,
+.mail,
+.slideburger {
+  position: fixed;
+}
+
+.slider,
+.hover-menu {
+  position: relative;
+}
+
+.slogan,
+li .submenu {
+  position: absolute;
+}
+
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.slider {
+  top: 2rem;
+  right: 0;
+  margin-bottom: 6rem;
+}
+
+.slogan {
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back-to-top {
+  top: 90%;
+  right: 3%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.phone {
+  top: 20%;
+  right: 3%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.mail {
+  top: 28%;
+  right: 3%;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* SUBMENU APPARITION DISPARITION */
+
+li .submenu {
+  background-color: #2a272794;
+  width: 110%;
+  top: 110%;
+  left: 2%;
+  text-align: left;
+}
+
+/* MARGIN */
+
+header a,
+select,
+input,
+header .btn-border,
+.icon-burg {
+  margin: 0rem 1rem;
+}
+
+.btn-border,
+.picto,
+.options p,
+.info {
+  margin: 1rem 0rem;
+}
+
+h1,
+.argument p {
+  margin-bottom: 1rem;
+}
+
+legend,
+.formulaire input,
+.fil-ariane {
+  margin: 1rem;
+}
+
+.presentation,
+.concept,
+.architect,
+.avis,
+.conseil,
+.histoire,
+.argument,
+footer {
+  margin-top: 5rem;
+}
+
+.conseil .bloc-bleu {
+  margin-left: 8rem;
+}
+
+.slide {
+  margin: 2rem 0rem 0rem;
+}
+
+.concept .bloc-blanc,
+.bloc-avis,
+.bloc-avis-border {
+  margin: 1rem 2rem 0rem 0rem;
+}
+
+p.footer-title,
+.concept p,
+.presenta-hotel li,
+.btn-black {
+  margin: 0.5rem;
+}
+
+.presentation p {
+  margin-right: 3rem;
+}
+
+
+.formulaire .bg-black {
+  margin: 3rem;
+}
+
+/* PADDING */
+
+.btn-border,
+.btn-black,
+.retour,
+.depart,
+.nombre,
+.chambre,
+.formulaire input,
+.formulaire select {
+  padding: 0.5rem;
+}
+
+.bg-yellow,
+.submenu a,
+.deco-gps {
+  padding: 0.5rem 0rem;
+}
+
+.bloc-avis,
+.bloc-avis-border,
+.solution .bloc-blanc,
+.bg-black {
+  padding: 1rem;
+}
+
+.bloc-blanc {
+  padding-bottom: 1rem;
+}
+
+article,
+.formulaire .bg-black {
+  padding: 2rem;
+}
+
+.bg-img .fil-ariane {
+  padding-top: 10rem;
+}
+
+/* BACKGOUND IMAGE */
+.bg-img {
+  width: auto;
+  height: 790px;
+  background-image: url(../img/img-bg-form.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  background-image: url(../picto/line-tracker-footer.png);
+  background-repeat: no-repeat;
+  padding-top: 4rem;
+}
+
+/* Format large */
+@media (min-width: 1280px) {
+  .large-none {
+    display: none;
+  }
+}
+
+/* Format small */
+@media (max-width: 1279px) {
+  .small-none {
+    display: none;
+  }
+
+  .small-100,
+  .retour,
+  .depart,
+  .nombre,
+  .chambre {
+    width: 100%;
+  }
+
+  .small-block {
+    display: block;
+  }
+
+  /* MARGIN SMALL */
+  .bg-black {
+    margin: 8rem 4rem 0rem 4rem;
+  }
+  .large-15 {
+    margin-bottom: 1rem;
+  }
+
+  .conseil .bloc-bleu {
+    margin-bottom: 3rem;
+    margin-left: 0rem;
+  }
+
+  .fil-ariane {
+    margin-top: 8rem;
+  }
+
+  .presentation,
+  .concept,
+  .architect,
+  .avis,
+  .conseil,
+  .histoire,
+  .argument,
+  footer,
+  .presenta-hotel,
+  .concept .bloc-blanc {
+    margin-top: 2rem;
+  }
+
+  .retour,
+  .depart,
+  .nombre,
+  .chambre {
+    margin: 1rem;
+  }
+
+  .formulaire .bg-black {
+    margin: 2rem;
+  }
+
+  /* PADDING SMALL */
+  .bg-black,
+  .concept {
+    padding: 2rem;
+  }
+  .conseil .bloc-bleu,
+  .bg-img .fil-ariane {
+    padding: 0;
+  }  
+  
+  /* SMALL BACKGROUND IMAGE */
+  footer {
+    background-image: url(../picto/line-tracker.png);
+    background-repeat: no-repeat;
+    padding-top: 4rem;
+  }
+
+  .bg-img {
+    background-image: none;
+    margin-bottom: 10rem;
+  }
+
+  /* SMALL MENU BURGER */
+
+  .slideburger {
+    padding: 1rem;
+    width: 28%;
+    height: 90%;
+    top: 15%;
+    right: 0;
+    transition: transform 1s ease;
+    z-index: 101;
+  }
+
+  .slideburger ul li {
+    margin-bottom: 1rem;
+  }
+
+  .menu-cache {
+    transform: translateX(354px);
+  }
+}
