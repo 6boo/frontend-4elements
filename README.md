@@ -1,2 +1,2 @@
 # frontend-4elements
-Création d'un site élégant en responsive design pour 4 Eléments, une entreprise proposant 4 hôtels thématiques liés aux éléments naturels. Priorité à la mise en valeur des offres exceptionnelles, avec possibilité de réservation en ligne ou par téléphone pour des besoins spécifiques.
+Conception et intégration responsive d'un site pour 4 Eléments, groupe franco-chinois proposant des hébergements uniques en harmonie avec la nature. Cible : couples CSP+ sans enfants. 4 hôtels représentant les quatre éléments. Site élégant pour mettre en valeur les offres exceptionnelles et faciliter les réservations en ligne ou par téléphone.
